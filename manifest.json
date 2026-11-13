@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "CSS Selector Data Extractor",
+  "version": "1.1.0",
+  "description": "Pick and auto-fill CSS selectors, validate match counts, extract tabular page data, and export TSV.",
+  "permissions": ["activeTab", "scripting", "storage", "clipboardWrite"],
+  "action": {"default_popup": "popup.html", "default_title": "CSS Selector Extractor"}
+}

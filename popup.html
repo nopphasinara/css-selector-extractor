@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"><title>CSS Selector Extractor</title></head>
+<body><main>
+<header><h1>CSS Selector Extractor</h1><span id="status" role="status" aria-live="polite"></span></header>
+<label for="container">Row container selector <small>(optional; recommended for aligned rows)</small></label>
+<input id="container" placeholder="e.g. #paintings_list ._painting" spellcheck="false">
+<div class="heading"><strong>Columns</strong><button id="add" class="secondary">+ Add selector</button></div>
+<div id="selectors"></div>
+<div class="actions"><button id="picker" class="secondary">◎ Selector Picker</button><button id="check" class="secondary">Check Matches</button><button id="extract">Extract Data</button></div>
+<p class="hint">Pick a column with ◎ or use the general Picker. Hover over an element and press C to copy and auto-fill its selector. Esc closes the picker. Reopen the popup after picking.</p>
+<p class="hint" id="checks" role="status" aria-live="polite">Not checked yet.</p>
+<div class="heading"><strong>Results <span id="count"></span></strong><div><button id="copy" class="secondary" disabled>Copy TSV</button><button id="export" class="secondary" disabled>Export TSV</button></div></div>
+<div id="tablewrap"><table id="results"></table></div>
+</main><script src="popup.js"></script></body></html>
